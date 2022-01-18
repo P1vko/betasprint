@@ -1,0 +1,126 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: normal;
+    background-color: #fff;
+}
+button {
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    color: #4B47FF;
+    border: 2px solid #4B47FF;
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+// Nav
+
+.nav {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    .nav__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px;
+
+        .nav__burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            span {
+                display: block;
+                width: 46px;
+                height: 3px;
+                background-color: #373946;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+// Header
+
+.header {
+    display: flex;
+    height: 1000px;
+    .header__offer-wrapper {
+        width: 33%;
+        .header__links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 50px 45px 0 0;
+            
+            .header__link {
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: #C6D0EA;
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+    
+                    img {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .header__offer {
+            margin: 0 54px;
+            .offer__h1 {
+                font-size: 84px;
+                font-weight: bold;
+
+                span {
+                    color: #4B47FF;
+                }
+            }
+            .offer__btn {
+                padding: 20px 40px;
+                font-weight: 500;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                width: fit-content;
+
+                img {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .header__clickme-wrapper {
+            .header__clickme-button {
+                background: #FF6645;
+                box-shadow: 4px 4px 20px rgba(255, 69, 69, 0.4);
+                padding: 16px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .header__media {
+        width: 67%;
+        background: linear-gradient(122.05deg, #FFFDEA -18.77%, #FFEAEB 40.79%, #C2D0FF 135.33%);
+        border-radius: 0 0 0 25px;
+    }
+}
