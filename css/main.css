@@ -61,7 +61,8 @@ a {
   display: flex;
   height: 1000px; }
   .header .header__offer-wrapper {
-    width: 33%; }
+    width: 33%;
+    position: relative; }
     .header .header__offer-wrapper .header__links {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -113,13 +114,40 @@ a {
         width: fit-content; }
         .header .header__offer-wrapper .header__offer .offer__btn img {
           margin-left: 15px; }
-    .header .header__offer-wrapper .header__clickme-wrapper .header__clickme-button {
-      background: #FF6645;
-      -webkit-box-shadow: 4px 4px 20px rgba(255, 69, 69, 0.4);
-              box-shadow: 4px 4px 20px rgba(255, 69, 69, 0.4);
-      padding: 16px;
-      border-radius: 50%; }
+    .header .header__offer-wrapper .header__clickme-wrapper {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin-left: auto;
+      top: -60px;
+      right: -28px; }
+      .header .header__offer-wrapper .header__clickme-wrapper .header__clickme-button {
+        position: relative;
+        background: #FF6645;
+        -webkit-box-shadow: 4px 4px 20px rgba(255, 69, 69, 0.4);
+                box-shadow: 4px 4px 20px rgba(255, 69, 69, 0.4);
+        padding: 16px;
+        border-radius: 50%; }
+        .header .header__offer-wrapper .header__clickme-wrapper .header__clickme-button::before {
+          content: "";
+          position: absolute;
+          top: -22px;
+          right: -22px;
+          z-index: -1;
+          background-image: url(..//img/more-projects.svg);
+          width: 50px;
+          height: 100px;
+          background-position: top right; }
+      .header .header__offer-wrapper .header__clickme-wrapper .header__clickme-arrow {
+        position: absolute;
+        top: 30px;
+        right: 90px; }
   .header .header__media {
+    z-index: -2;
     width: 67%;
     background: linear-gradient(122.05deg, #FFFDEA -18.77%, #FFEAEB 40.79%, #C2D0FF 135.33%);
     border-radius: 0 0 0 25px; }
