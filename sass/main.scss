@@ -57,6 +57,7 @@ a {
 .header {
     display: flex;
     height: 1000px;
+    margin-bottom: 140px;
     .header__offer-wrapper {
         width: 33%;
         position: relative;
@@ -143,9 +144,6 @@ a {
                 top: 30px;
                 right: 90px;
             }
-            // .header__clickme-bg {
-            //     position: absolute;
-            // }
         }
     }
     .header__media {
@@ -153,5 +151,38 @@ a {
         width: 67%;
         background: linear-gradient(122.05deg, #FFFDEA -18.77%, #FFEAEB 40.79%, #C2D0FF 135.33%);
         border-radius: 0 0 0 25px;
+    }
+}
+
+// Statistics
+
+.statistics {
+    margin-bottom: 115px;
+    .statistics__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .statistics__item {
+            display: flex;
+            flex-direction: column;
+            padding-right: 60px;
+            margin-right: 100px;
+            border-right: 1px solid #E6EAF3;
+            &:last-child {
+                border-right: none;
+                padding-right: 0;
+                margin-right: 0;
+            }
+
+            .statistics__title {
+                color: #8589A3;
+                font-size: 20px;
+            }
+            .statistics__value {
+                color: #373946;
+                font-weight: bold;
+                font-size: 36px;
+            }
+        }
     }
 }

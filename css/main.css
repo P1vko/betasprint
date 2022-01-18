@@ -59,7 +59,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1000px; }
+  height: 1000px;
+  margin-bottom: 140px; }
   .header .header__offer-wrapper {
     width: 33%;
     position: relative; }
@@ -151,3 +152,38 @@ a {
     width: 67%;
     background: linear-gradient(122.05deg, #FFFDEA -18.77%, #FFEAEB 40.79%, #C2D0FF 135.33%);
     border-radius: 0 0 0 25px; }
+
+.statistics {
+  margin-bottom: 115px; }
+  .statistics .statistics__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .statistics .statistics__wrapper .statistics__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-right: 60px;
+      margin-right: 100px;
+      border-right: 1px solid #E6EAF3; }
+      .statistics .statistics__wrapper .statistics__item:last-child {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0; }
+      .statistics .statistics__wrapper .statistics__item .statistics__title {
+        color: #8589A3;
+        font-size: 20px; }
+      .statistics .statistics__wrapper .statistics__item .statistics__value {
+        color: #373946;
+        font-weight: bold;
+        font-size: 36px; }
