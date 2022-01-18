@@ -65,7 +65,6 @@ a {
 .header {
     display: flex;
     height: 100vh;
-    margin-bottom: 140px;
     &__offer-wrapper {
         width: 33%;
         position: relative;
@@ -175,6 +174,7 @@ a {
 // Statistics
 
 .statistics {
+    margin-top: 140px;
     margin-bottom: 115px;
     &__wrapper {
         display: flex;

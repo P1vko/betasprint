@@ -78,8 +78,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  margin-bottom: 140px; }
+  height: 100vh; }
   .header__offer-wrapper {
     width: 33%;
     position: relative; }
@@ -187,6 +186,7 @@ a {
     border-radius: 0 0 0 25px; }
 
 .statistics {
+  margin-top: 140px;
   margin-bottom: 115px; }
   .statistics__wrapper {
     display: -webkit-box;
