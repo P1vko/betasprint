@@ -21,19 +21,24 @@ a {
   border: 2px solid #4B47FF;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin: 0;
+  padding: 0; }
 
 .btn-circle {
   width: 100px;
   height: 100px;
   background: url(../img/arrow_button.svg) no-repeat center; }
 
+.text {
+  font-weight: normal;
+  font-size: 18px;
+  color: #5C5F75; }
+
 h2 {
   font-weight: bold;
   font-size: 84px;
-  color: #373946;
-  margin: 0;
-  padding: 0; }
+  color: #373946; }
 
 h4 {
   font-weight: bold;
@@ -46,6 +51,11 @@ h4 {
   font-weight: 500;
   font-size: 18px;
   text-transform: uppercase; }
+
+.info-value {
+  color: #373946;
+  font-weight: bold;
+  font-size: 36px; }
 
 @-webkit-keyframes rotate {
   0% {
@@ -235,10 +245,6 @@ h4 {
   .statistics__title {
     color: #8589A3;
     font-size: 20px; }
-  .statistics__value {
-    color: #373946;
-    font-weight: bold;
-    font-size: 36px; }
 
 .projects {
   margin-bottom: 150px; }
@@ -353,6 +359,8 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 100px; }
+  .specialization__heading h2 {
+    margin: 0; }
   .specialization__heading .btn {
     margin-left: 65px; }
 .specialization__suptitle {
@@ -379,6 +387,7 @@ h4 {
       -ms-flex-pack: start;
           justify-content: flex-start; }
   .specialization__content-item h4 {
+    margin: 0;
     margin-top: 65px;
     margin-bottom: 20px; }
 .specialization__content-wrapper {
@@ -399,3 +408,99 @@ h4 {
   border-radius: 100px;
   padding: 7px 15px;
   margin: 0 15px 10px 0; }
+
+.about__wrapper {
+  margin: 180px 0 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.about__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px; }
+  .about__heading h2 {
+    margin: 0; }
+.about__suptitle {
+  color: #FF543D; }
+.about__text {
+  width: 45%;
+  text-align: center;
+  margin-bottom: 65px; }
+.about__info-wrapper {
+  background: linear-gradient(131.62deg, #FFFDF5 4.88%, #FFF5F5 85.46%);
+  border-radius: 30px;
+  padding: 50px 45px;
+  position: relative; }
+  .about__info-wrapper img {
+    position: absolute;
+    top: calc(50% - 160px);
+    right: calc(50% - 150px);
+    width: 300px;
+    height: 300px;
+    -webkit-animation: 10s rotate linear infinite;
+            animation: 10s rotate linear infinite; }
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+.about__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 15px 10px 50px; }
+  .about__card:first-child {
+    border: 1px solid #F4E2E2;
+    border-top: 0;
+    border-left: 0; }
+  .about__card:nth-child(2) {
+    border-bottom: 1px solid #F4E2E2; }
+  .about__card:nth-child(3) {
+    border-right: 1px solid #F4E2E2;
+    padding: 70px 10px 15px; }
+  .about__card:last-child {
+    padding: 70px 10px 15px; }
+.about__info-title {
+  color: #5C5F75;
+  font-size: 24px; }
+.about__info-btn {
+  border-color: #FF543D;
+  background-color: #FFF;
+  background-image: url(../img/arrow_button-orange.svg);
+  position: absolute;
+  top: calc(50% - 60px);
+  right: calc(50% - 50px); }
