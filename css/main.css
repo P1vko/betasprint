@@ -338,7 +338,14 @@ h4 {
         text-align: right;
         color: #C1C3CF;
         font-weight: 500;
-        font-size: 16px; }
+        font-size: 16px;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-left: auto; }
       .projects-links__category span {
         text-align: left;
         font-weight: bold;
