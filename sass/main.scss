@@ -55,6 +55,10 @@ h4 {
     font-size: 18px;
     text-transform: uppercase;
 }
+.subtitle {
+    color: #5C5F75;
+    font-size: 24px;
+}
 .info-value {
     color: #373946;
     font-weight: bold;
@@ -567,3 +571,122 @@ h4 {
 }
 
 // Feedback
+
+.feedback {
+    margin-bottom: 150px;
+    
+    &__card {
+        background: linear-gradient(116.65deg, #FFFBF2 -27.08%, #F6F5FF 102.22%);
+        border-radius: 30px;
+        padding: 40px 30px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__card-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 57px;
+    }
+    &__card-user {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+    }
+    &__user-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    &__user-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 30px;
+    }
+    &__user-name {
+        color: #5C5F75;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    &__user-subinfo {
+        color: #BABDD6;
+        font-size: 18px;
+    }
+    &__user-link {
+        text-decoration-line: underline;
+        color: #6697D0;
+        font-size: 16px;
+    }
+    &__card-text {
+        padding: 53px 45px 30px 53px;
+        background: #FFFFFF;
+        border-radius: 30px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 41px;
+            height: 30px;
+            background-image: url(../img/feedback-quotes.svg);
+            position: absolute;
+            top: -16px;
+            left: 53px
+        }
+
+        p {
+            color: #5C5F75;
+            font-size: 18px;
+        }
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0 100px;
+        
+        h2 {
+            max-width: 450px;
+            margin-bottom: 40px;
+        }
+    }
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+    &__buttons {
+        display: flex;
+        align-items: center;
+    }
+    &__btn-subscr {
+        color: #4B47FF;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 80px;
+        display: block;
+    }
+}
+
+.feedback-slider {
+    &__arrow  {
+        background-image: url(../img/arrow_feedback-button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #FFFFFF;
+        border: 2px solid #CDD0E7;
+        box-sizing: border-box;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        transform: none;
+        opacity: 1;
+        position: absolute;
+        display: inline-flex;
+        top: 65px;
+        right: 50px;
+        left: auto;
+
+        &:first-child {
+            transform: rotate(180deg);
+            right: 130px;
+        }
+    }
+}
