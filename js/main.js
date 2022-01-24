@@ -13,6 +13,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         pagination: false,
         arrows: false,
         type: 'loop',
+        drag: false
     } );
     splide.mount();
   } );
@@ -26,9 +27,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoWidth: true,
         fixedHeight: '61px',
         autoplay: true,
-        interval: 1,
-        speed: 1200,
-        pauseOnHover: true,
+        interval: 0,
+        speed: 1500,
+        drag: false,
+        easing: 'linear',
     } );
     splide.mount();
   } );
@@ -41,9 +43,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
         autoWidth: true,
         fixedHeight: '61px',
         autoplay: true,
-        interval: 1,
-        speed: 1200,
-        pauseOnHover: true,
+        interval: 0,
+        speed: 1500,
+        drag: false,
+        easing: 'linear',
     } );
     splide.mount();
   } );
