@@ -628,6 +628,7 @@ h4 {
         flex-direction: column;
         justify-content: space-between;
         margin-left: 30px;
+        align-items: flex-start;
     }
     &__user-name {
         color: #5C5F75;
@@ -654,6 +655,7 @@ h4 {
             width: 41px;
             height: 30px;
             background-image: url(../img/feedback-quotes.svg);
+            background-repeat: no-repeat;
             position: absolute;
             top: -16px;
             left: 53px
@@ -760,6 +762,7 @@ h4 {
 
 .contacts {
     position: relative;
+    margin-bottom: 80px;
 
     &:before {
         content: "";
@@ -787,6 +790,13 @@ h4 {
             margin-bottom: 50px;
             color: #858A95;
             font-size: 20px;
+        }
+
+        select {
+            appearance: none;
+            background-image: url(../img/arrow_bottom-orange.svg);
+            background-repeat: no-repeat;
+            background-position: right;
         }
         
         button {
@@ -835,6 +845,11 @@ h4 {
             color: #4B47FF;
             margin-bottom: 65px;
         }
+        a {
+            text-decoration: underline;
+            margin-bottom: 100px;
+            color: #373946;
+        }
     }
     &__info-phones {
         display: flex;
@@ -847,9 +862,5 @@ h4 {
                 margin-bottom: 0;
             }
         }
-    }
-    &__info-email {
-        text-decoration: underline;
-        margin-bottom: 100px;
     }
 }
