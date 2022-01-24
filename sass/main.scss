@@ -419,6 +419,28 @@ h4 {
 
 .about {
     margin: 180px 0 150px;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 85px;
+        background-image: url(../img/about-us_before.png);
+        background-repeat: no-repeat;
+        width: 376px;
+        height: 130px;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: -90px;
+        right: 0;
+        background-image: url(../img/about-us_after.png);
+        background-repeat: no-repeat;
+        width: 600px;
+        height: 225px;
+    }
 
     &__wrapper {
         display: flex;
