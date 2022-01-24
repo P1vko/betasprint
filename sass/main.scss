@@ -624,7 +624,7 @@ h4 {
         border-radius: 30px;
         position: relative;
 
-        &:after {
+        &:before {
             content: "";
             width: 41px;
             height: 30px;
@@ -687,6 +687,46 @@ h4 {
         &:first-child {
             transform: rotate(180deg);
             right: 130px;
+        }
+    }
+}
+
+// Partners
+
+.partners {
+    margin-bottom: 190px;
+}
+
+.partners-slider {
+    width: 100%;
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    .partner {
+        margin-right: 80px;
+
+        img {
+            opacity: 0.15;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+    }
+}
+
+.partners-slider_ltr {
+    margin-bottom: 90px;
+}
+
+.partners-slider_rtl {
+    .partner {
+        img {
+            transform: scaleX(-1);
         }
     }
 }
