@@ -26,6 +26,9 @@ a {
     border-radius: 100px;
     margin: 0;
     padding: 0;
+    &:hover {
+        color: #4B47FF;
+    }
 }
 .btn-circle {
     width: 100px;
@@ -501,7 +504,7 @@ h4 {
     }
 }
 
-// Team |Our team
+// Team | Our team
 
 .team {
     margin-bottom: 130px;
@@ -717,16 +720,114 @@ h4 {
             filter: grayscale(100%);
         }
     }
-}
 
-.partners-slider_ltr {
-    margin-bottom: 90px;
-}
+    &_ltr {
+        margin-bottom: 90px;
+    }
 
-.partners-slider_rtl {
-    .partner {
-        img {
-            transform: scaleX(-1);
+    &_rtl {
+        .partner {
+            img {
+                transform: scaleX(-1);
+            }
         }
+    }
+}
+
+// Contacts
+
+.contacts {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 50%;
+        height: 87%;
+        position: absolute;
+        top: 160px;
+        left: 0;
+        border-radius: 0 30px 30px 0;
+        z-index: -1;
+        background: linear-gradient(131.62deg, #FFFDF5 4.88%, #FFF5F5 85.46%);
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 115px 0 0;
+
+        input, select {
+            border: none;
+            border-bottom: 2px solid #E8DAD7;
+            background-color: transparent;
+            padding: 15px 20px;
+            outline: none;
+            margin-bottom: 50px;
+            color: #858A95;
+            font-size: 20px;
+        }
+        
+        button {
+            margin-top: 20px;
+            background-color: #fff;
+            border: 2px solid #FF5D29;
+            box-sizing: border-box;
+            border-radius: 100px;
+            padding: 20px 40px;
+            max-width: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FF5D29;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    &__info-wrapper {
+        padding: 65px 80px 0 100px;
+
+        .btn {
+            border-color: #373946;
+            background-image: url(../img/arrow_button-black.svg); 
+        }
+    }
+
+    &__info-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__info {
+        color: #373946;
+        font-size: 28px;
+        display: flex;
+        flex-direction: column;
+        margin: 80px 0;
+
+        .suptitle {
+            color: #4B47FF;
+            margin-bottom: 65px;
+        }
+    }
+    &__info-phones {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 75px;
+        
+        span {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__info-email {
+        text-decoration: underline;
+        margin-bottom: 100px;
     }
 }
